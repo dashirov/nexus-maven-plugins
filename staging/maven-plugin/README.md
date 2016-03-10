@@ -464,7 +464,7 @@ All of them accept optional `description` parameter, but it's not mandatory. If 
 #### `rc-open` (since 1.6.7)
 
 Creates a new staging repository from a staging profile. Example invocation:
-   
+
    mvn nexus-staging:rc-open -DserverId=local-nexus -DnexusUrl=http://localhost:8081/nexus -DstagingProfileId=72c1cc10566951 -DopenedRepositoryMessageFormat='The name of created repository is: %s' -DstagingDescription="The reason I open it is..."
 
 Would create a new staging repository on the remote Nexus and log its name using the string format requested via openedRepositoryMessageFormat parameter. Parameter openedRepositoryMessageFormat is optional, if not provided the name of the newly created repository will be logged in a default format. 
